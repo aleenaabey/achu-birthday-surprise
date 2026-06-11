@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Achu!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="surpriseOverlay" class="surprise-overlay">
+        <div class="surprise-panel">
+            <h1>Happy Birthday, <span class="highlight">Achu</span>!</h1>
+            <p>The surprise is ready. Open this now and feel all the love from your special day.</p>
+            <button id="openSurpriseBtn">Open Your Birthday Surprise</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Happy Birthday, <span class="highlight">Achu</span>! 🎂</h1>
+            <p>Wishing the absolute best to my favorite person on June 19th.</p>
+            <div class="hero-controls">
+                <button id="musicBtn">Play Music ♪</button>
+            </div>
+        </div>
+        <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+    </header>
+
+    <!-- Memory Gallery Section -->
+    <section class="gallery-section">
+        <h2> Memories ✨</h2>
+        <div class="gallery-grid">
+            
+            <!-- Photo -->
+            <div class="gallery-item">
+                <img src="achu-photo.jpg" alt="Achu's Birthday Photo">
+            </div>
+
+            <!-- Videos -->
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="VID-20260610-WA0013.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="VID-20260610-WA0019.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="VID-20260610-WA0020.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="VID-20260610-WA0017.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="gallery-item video-item">
+                <video controls>
+                    <source src="VID-20260610-WA0021.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Letter/Message Section -->
+    <section class="message-section">
+        <div class="card">
+            <h2>A Little Note For You 📝</h2>
+            <p>
+                First we were friends, then we became best friends — and one day we finally met again unexpectedly.
+                I saw you from the car outside where it happened, and when I waved you didn’t recognize me.
+                That night I kept dreaming about our moment, and when I texted you you said you didn’t know it was me.
+                Two years passed without seeing each other, and then in March 2026 we met again like fate had planned it.
+                Now, we are still together as best friends, and I treasure every memory we share.
+            </p>
+            <button id="surpriseBtn">Click for a Surprise 🎉</button>
+            <p id="surpriseMessage" class="hidden">You are the best! Have an incredible day! 🌟</p>
+        </div>
+    </section>
+
+    <!-- Background music file: autoplay attempt with user fallback -->
+    <audio id="bgMusic" src="aaro-nee.mp4" preload="auto" autoplay loop playsinline></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
